@@ -6,21 +6,7 @@ c) Output the text 'Friday and Saturday are my favourite days'. (slides 5-8)
 d) Output the entire contents of the array using a forEach loop. (slides 14-15)
 */
 
-// const daysOfTheWeek= ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
-
-// (a)
-// console.log(daysOfTheWeek[1]);
-
-// (b)
-// console.log(`${daysOfTheWeek[0]} is the first day of the week.`);
-
-// (c)
-// console.log(`${daysOfTheWeek[4]} and ${daysOfTheWeek[5]} are my favourite days.`);
-
-// (d)
-// daysOfTheWeek.forEach(function(day){
-//     console.log(day);
-// })
+const daysOfTheWeek= ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 
 /*
 2. The following code declares an array. Using this array attempt the following:
@@ -29,40 +15,7 @@ b) Use a filter to generate an array of countries that contain the letter 'n'. H
 c) Modify your program from (2b) so that you ask the user for a search term and then display the countries that match the search term e.g. if the user enters 'i', China, India, Indonesia, Brazil and Pakistan should be displayed.
 */
 
-// const countries=["China","India","USA","Indonesia","Brazil","Pakistan"];
-
-// (a)
-// countries.forEach(function(country){
-//     console.log(country);
-// })
-
-// (b)
-// const countriesWithLetterN = countries.filter(function(country){
-//     if(country.indexOf("n") === -1){
-//         return false;
-//     }
-//     return true;
-// })
-//
-// // The \n means newline. It adds a new line in the console message.
-// console.log("\nThe following countries contain the letter 'n'.")
-// countriesWithLetterN.forEach(function(country){
-//     console.log(country);
-// })
-
-// (c)
-// const searchTerm = prompt("Enter a search term");
-// const matchingCountries = countries.filter(function(country){
-//     if(country.indexOf(searchTerm) === -1){
-//         return false;
-//     }
-//     return true;
-// })
-//
-// console.log(`\nThe following countries contain the letter '${searchTerm}'.`)
-// matchingCountries.forEach(function(country){
-//     console.log(country);
-// })
+const countries=["China","India","USA","Indonesia","Brazil","Pakistan"];
 
 /*
 3. The following code declares an object literal.
@@ -75,17 +28,8 @@ c) Add another property to store the population of England (53000000). Test this
 const country={
   name : "England",
   capital : "London",
-  continent : "Europe",
-  population: 53000000
+  continent : "Europe"
 }
-
-//a)
-// console.log(country.name);
-
-//b)
-// console.log(`${country.name} is a country in ${country.continent}. The capital city of ${country.name} is ${country.capital}.`);
-//c)
-// console.log(`${country.population}`);
 
 /*
 4. The following code creates an array of objects. Using this array output the following information using a console.log.
@@ -100,85 +44,16 @@ const countries=[
     {name : "England", capital : "London", continent : "Europe", population: 53000000},
     {name : "France", capital : "Paris", continent : "Europe", population: 67000000},
     {name : "Germany", capital : "Berlin", continent : "Europe", population: 80000000},
-    {name : "USA", capital : "Washington", continent : "N. America", population: 325000000},
-    {name : "Japan", capital : "Tokyo", continent : "Asia", population: 127000000}
+    {name : "USA", capital : "Washington", continent : "N. America", population: 325000000}
 ]
-
-//a)
-// console.log(`${countries[2].capital}`)
-
-//b)
-// console.log(`${countries[0].name} has a population of ${countries[0].population}`)
-
-//d)
-// countries.forEach(
-//   function(country){
-//     console.log(`${country.name}`);
-//   }
-// )
-
-// e)
-// const europeanCountries = countries.filter(
-//   function(country){
-//     if(country.continent === "Europe")
-//     {
-//       return true;
-//     }
-//     return false;
-//   }
-// )
-
-// console.log("\nThe following countries are in Europe:")
-// europeanCountries.forEach(
-//   function(country){
-//     console.log(`${country.name}`);
-//   }
-// )
 
 /*
 5. Write a program that will prompt the user for the name of a continent. The program should then output the countries from that continent. (slide 32)
 */
 
-// const contChoice = prompt("Enter the name of a continent");
-// const matchingCountries = countries.filter(function(country){
-//     if(country.continent === contChoice){
-//       return true;
-//     }
-//     return false;
-//   }
-// )
-
-// console.log(`\nThe following countries are in ${contChoice}:`)
-// matchingCountries.forEach(
-//   function(country){
-//     console.log(`${country.name}`);
-//   }
-// )
-
-
 /*
 6. Modify question 5 so that the program also prompts for a minimum population. The program should then output the countries that match both the specified continent and minimum population e.g. if the user enters 'Europe' and 60000000 only France should be displayed.
 */
-
-// const contChoice = prompt("Enter the name of a continent");
-// const popChoice = parseInt(prompt("Enter a minimum value for population"));
-
-// const matchingCountries = countries.filter(
-//   function(country){
-//     if(country.continent === contChoice && country.population >= popChoice)
-//     {
-//       return true;
-//     }
-//     return false;
-//   }
-// )
-
-// console.log(`\nThe following countries are in ${contChoice} and have a population of at least ${popChoice}.`)
-// matchingCountries.forEach(
-//   function(country){
-//     console.log(`${country.name}`);
-//   }
-// )
 
 /*
 This question is less important, but feel free to attempt it if you'd like some more practice.
@@ -194,54 +69,4 @@ e) Use the reduce function to get the total of all the numbers entered.
 f) Use reduce to get the largest of the numbers that have been entered.
 */
 
-//const nums = [23,-1,250,10,-5,2];
-
-// (d)
-// const userNum = parseInt(prompt("How many numbers would you like to enter?"))
-// const nums = []
-// for(i=1;i<=userNum;i++){
-//   const num = parseInt(prompt(`Enter number ${i}`))
-//   nums.push(num)
-// }
-
-// (a)
-// nums.forEach(function(num){
-//     console.log(num);
-// })
-
-// (b)
-// const doubleNums=nums.map(function(num){
-//     return num*2;
-// })
-// console.log("The numbers doubled:");
-// doubleNums.forEach(function(num){
-//     console.log(num);
-// })
-
-// (c)
-// const positiveNums=nums.filter(function(num){
-//     if(num>0){
-//         return true;
-//     }
-//     return false;
-// })
-// console.log("The numbers filtered:");
-// positiveNums.forEach(function(num){
-//     console.log(num);
-// })
-
-// (e)
-// const total = nums.reduce(function(a,b){
-//   return a+b;
-// })
-// console.log(`The total is ${total}.`);
-
-// (f)
-// const largest = nums.reduce(function(a,b){
-//   if(a>b) {
-//     return a;
-//   }else{
-//     return b;
-//   }
-// })
-// console.log(`The largest number is ${largest}.`);
+const nums = [23,-1,250,10,-5,2];

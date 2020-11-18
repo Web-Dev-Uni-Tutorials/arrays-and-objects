@@ -157,7 +157,7 @@ const countries=[
 
 
 /*
-6. Modify question 5 so that the program also prompts for a minimum population. The program should then output the countries that match both the specified continent and minimum population e.g. if the user enters 'Europe' and 60000000 only France should be displayed.
+6. Modify question 5 so that the program also prompts for a minimum population. The program should then output the countries that match both the specified continent and minimum population e.g. if the user enters 'Europe' and 60000000 only France and Germany should be displayed.
 */
 
 // const contChoice = prompt("Enter the name of a continent");

@@ -60,12 +60,14 @@ d) Use a forEach loop to output the name of each country in the array.
 e) Use the filter method to create a new array that only contains countries from Europe. 
 */
 
+/*
 const countries=[
     {name : "England", capital : "London", continent : "Europe", population: 53000000},
     {name : "France", capital : "Paris", continent : "Europe", population: 67000000},
     {name : "Germany", capital : "Berlin", continent : "Europe", population: 80000000},
     {name : "USA", capital : "Washington", continent : "N. America", population: 325000000}
 ]
+*/
 
 /*
 6. Write a program that will prompt the user for the name of a continent. The program should then output the countries from that continent. 
